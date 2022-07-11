@@ -1,15 +1,15 @@
 package br.com.lucas.DTO;
 
-public class RaffleDTO {
+public class BingoDTO {
 
     public Integer id;
     public String nome;
 
-    public RaffleDTO() {
+    public BingoDTO() {
 
     }
 
-    public RaffleDTO(Integer id, String nome) {
+    public BingoDTO(Integer id, String nome) {
         this.id = id;
         this.nome = nome;
     }

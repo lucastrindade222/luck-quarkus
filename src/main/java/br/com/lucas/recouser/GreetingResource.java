@@ -1,4 +1,4 @@
-package br.com.lucas;
+package br.com.lucas.recouser;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -8,7 +8,6 @@ import javax.ws.rs.core.MediaType;
 import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 
-import br.com.lucas.DTO.RaffleDTO;
 
 @Path("/hello")
 @Tag(name = "Bom dia")
@@ -21,12 +20,5 @@ public class GreetingResource {
         return "Hello from RESTEasy Reactive";
     }
 
-    @GET
-    @Path("/bomDia")
-    @Tag(name = "bom dia")
-    @Operation(description = "Mostra um bom dia",summary = "MOstrar na tela um bom dia ")
-    @Produces(MediaType.APPLICATION_JSON_PATCH_JSON)
-    public RaffleDTO bomdia() {
-        return new RaffleDTO(1,"bom dia");
-    }
+   
 }
